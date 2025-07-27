@@ -13,7 +13,7 @@ class ColorPickerPage extends StatefulWidget {
 }
 
 class _ColorPickerPageState extends State<ColorPickerPage> {
-  Color selectedColor = Colors.blue;
+  Color selectedColor = Colors.yellow;
   bool isCircular = false;
   bool isShowColorname = true;
   void _randomcolorpick() {
@@ -44,14 +44,12 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
     });
   }
 
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Color Picker',
-        ),
-        
+        title: Text('Color Picker'),
+
         centerTitle: true,
         actions: [
           PopupMenuButton<String>(
@@ -140,4 +138,3 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
     );
   }
 }
-
